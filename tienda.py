@@ -19,7 +19,7 @@ if usuario == "Si":
         print("Contraseña correcta")
         descuentoVIP = 10
     else:
-        print("Comtraseña invalida")
+        print("Contraseña incorrecta")
 
 #Descuento superior a 100$ 
 if compra > 100:
@@ -29,7 +29,6 @@ if compra > 100:
 codigoD = input("Usted tiene un codigo de descuento? Si/NO  ")
 if codigoD == "Si":
     digitCodigo = int(input("Por favor, digite su codigo (5 caracteres): "))
-    descuentoC = 0
 
     if digitCodigo == 21554:
         descuentoC = 5
@@ -61,9 +60,9 @@ if descuentos > 1:
 
 #Resultados
 print()
-print(f"valor de la compra: {compra}")
+print(f"valor de la compra: {compra}$")
 print(f"Recibe un descuento del {descuentos}%")
 if descuentos == 0:
-    print(f"El valor a pagar de su compra es: {compra}")
+    print(f"El valor a pagar de su compra es: {compra}$")
 else:
-    print(f"El valor a pagar de su compra es: {descuentoCompra}")
+    print(f"El valor a pagar de su compra es: {descuentoCompra}$")
